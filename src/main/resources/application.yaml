@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    name: blog
+    generate-unique-name: false
+  h2:
+    console:
+      enabled: true
+  mvc:
+    problemdetails:
+      enabled: true
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  tracing:
+    sampling:
+      probability: 1.0
